@@ -93,7 +93,7 @@ function rightSideContent(result){
                         </div>
                         <div class="content">
                             <p class="title">TEMP</p>
-                            <span class="value">${Math.round(result.main.temp - 275.15)}°C</span>
+                            <span class="value">${Math.round(result.main.temp - 273.15)}°C</span>
                         </div>
                         <div class="content">
                             <p class="title">HUMIDITY</p>
@@ -141,6 +141,6 @@ function forecast(frContent){
     return `<li>
                                 <img src=" https://openweathermap.org/img/wn/${frContent.weather[0].icon}@2x.png" />
                                 <span>${joinDay}</span>
-                                <span class="day_temp">${Math.round(frContent.main.temp - 275.15)}°C</span>
+                                <span class="day_temp">${Math.round(frContent.main.temp - 273.15)}°C</span>
                             </li>`
 }
