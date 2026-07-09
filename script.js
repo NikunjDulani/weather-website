@@ -81,7 +81,7 @@ async function findLocation(name) {
 //display image content and temp
 function displayImageContent(data) {
     return `<img src="https://openweathermap.org/img/wn/${data.weather[0].icon}@4x.png" alt="">
-        <h2 class="weather_temp">${Math.round(data.main.temp - 275.15)}°C</h2>
+        <h2 class="weather_temp">${Math.round(data.main.temp - 273.15)}°C</h2>
         <h3 class="cloudtxt">${data.weather[0].description}</h3>`;
 }
 
